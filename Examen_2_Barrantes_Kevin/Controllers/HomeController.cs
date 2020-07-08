@@ -8,7 +8,7 @@ namespace Examen_2_Barrantes_Kevin.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
             return View();
         }

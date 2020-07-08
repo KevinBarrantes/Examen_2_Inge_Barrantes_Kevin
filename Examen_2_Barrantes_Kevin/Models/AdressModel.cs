@@ -2,7 +2,7 @@
 
 namespace Examen_2_Barrantes_Kevin.Models
 {
-    public class Adress
+    public class AdressModel
     {
         [Display(Name = "Provincia")]
         public string Province { get; set; }

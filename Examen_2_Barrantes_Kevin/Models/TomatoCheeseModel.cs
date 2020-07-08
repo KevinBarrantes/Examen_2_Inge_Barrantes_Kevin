@@ -2,7 +2,7 @@
 
 namespace Examen_2_Barrantes_Kevin.Models
 {
-    public class TomatoCheese
+    public class TomatoCheeseModel
     {
         [Display(Name = "Salsa")]
         public bool sauce { get; set; }
