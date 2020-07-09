@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace Examen_2_Barrantes_Kevin.Models
 {
@@ -36,5 +38,6 @@ namespace Examen_2_Barrantes_Kevin.Models
         public bool purpleOnion { get; set; }
         [Display(Name = "Cantidad")]
         public string purpleOnionQuantity { get; set; }
+        public List<SelectListItem> QuantityList { get; set; }
     }
 }

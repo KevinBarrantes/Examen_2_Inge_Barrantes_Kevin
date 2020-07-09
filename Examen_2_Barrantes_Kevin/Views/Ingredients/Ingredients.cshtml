@@ -1,0 +1,106 @@
+﻿@model Examen_2_Barrantes_Kevin.Models.IngredientsModel
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h1>Masa</h1>
+                <hr />
+                <h2>Card</h2>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.ham, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.ham)
+                    @Html.DropDownListFor(model => model.hamQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.ham, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.pepperoni, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.pepperoni)
+                    @Html.DropDownListFor(model => model.pepperoniQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.pepperoni, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.groundBeef, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.groundBeef)
+                    @Html.DropDownListFor(model => model.groundBeefQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.groundBeef, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.salami, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.salami)
+                    @Html.DropDownListFor(model => model.salamiQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.salami, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.bacon, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.bacon)
+                    @Html.DropDownListFor(model => model.baconQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.bacon, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.redPeppers, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.redPeppers)
+                    @Html.DropDownListFor(model => model.redPeppersQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.redPeppers, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.pineapple, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.pineapple)
+                    @Html.DropDownListFor(model => model.pineappleQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.pineapple, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+                    @Html.LabelFor(model => model.purpleOnion, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.CheckBoxFor(model => model.purpleOnion)
+                    @Html.DropDownListFor(model => model.purpleOnionQuantity, Model.QuantityList, "--Please select a topic--", new { @class = "form-control" })                
+                    @Html.ValidationMessageFor(model => model.purpleOnion, "", new { @class = "text-danger" })
+                    <h4>Poco = 400, Medio = 450, Mucho = 800</h4>
+                </div>
+
+                @Html.HiddenFor(model => model.generalPrice)
+                @Html.HiddenFor(model => model.generalOrder)
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Siguiente" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+    </body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

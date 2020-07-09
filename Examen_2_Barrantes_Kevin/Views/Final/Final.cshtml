@@ -1,0 +1,32 @@
+﻿@model Examen_2_Barrantes_Kevin.Models.FinalModel
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h1>Pedido</h1>
+
+                <h3>@Html.DisplayNameFor(model => model.Direction)</h3>
+                <h3>@Html.DisplayFor(model => model.Direction)</h3>
+
+                <h3>@Html.DisplayNameFor(model => model.generalOrder)</h3>
+                <h3>@Html.DisplayFor(model => model.generalOrder)</h3>
+
+                <h3>@Html.DisplayNameFor(model => model.generalPrice)</h3>
+                <h3>@Html.DisplayFor(model => model.generalPrice)</h3>
+            </div>
+        }
+    </body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

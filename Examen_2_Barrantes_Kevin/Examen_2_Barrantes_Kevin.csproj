@@ -120,15 +120,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\DoughController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\FinalController.cs" />
     <Compile Include="Controllers\IngredientsController.cs" />
     <Compile Include="Controllers\TomatoCheeseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AdressModel.cs" />
+    <Compile Include="Models\AddressModel.cs" />
     <Compile Include="Models\DoughModel.cs" />
+    <Compile Include="Models\FinalModel.cs" />
     <Compile Include="Models\IngredientsModel.cs" />
     <Compile Include="Models\TomatoCheeseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,10 +175,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Dough\Dough.cshtml" />
     <Content Include="Views\TomatoCheese\TomatoCheese.cshtml" />
+    <Content Include="Views\Ingredients\Ingredients.cshtml" />
+    <Content Include="Views\Address\Address.cshtml" />
+    <Content Include="Views\Final\Final.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Ingredients\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
