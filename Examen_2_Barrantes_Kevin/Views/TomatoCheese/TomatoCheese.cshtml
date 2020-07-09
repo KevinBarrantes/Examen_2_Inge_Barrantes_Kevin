@@ -1,0 +1,50 @@
+﻿@model Examen_2_Barrantes_Kevin.Models.TomatoCheeseModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h1>Masa</h1>
+        <hr />
+        <h2>Card</h2>
+
+        <div class="card">
+            <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+            @Html.LabelFor(model => model.sauce, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.CheckBoxFor(model => model.sauce)                       
+            @Html.ValidationMessageFor(model => model.sauce, "", new { @class = "text-danger" })
+            <h4>Precio de Salsa = 1000</h4>
+        </div>
+
+        <div class="card">
+            <img src="https://i.etsystatic.com/16345182/r/il/751a05/1501866121/il_570xN.1501866121_98wb.jpg" alt="Avatar" style="width:100%">
+            @Html.LabelFor(model => model.cheese, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.CheckBoxFor(model => model.cheese)
+            @Html.ValidationMessageFor(model => model.cheese, "", new { @class = "text-danger" })            
+            <h4>Pequeña = 400</h4>
+        </div>
+        @Html.HiddenFor(model => model.generalPrice)
+        @Html.HiddenFor(model => model.generalOrder)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Siguiente" class="btn btn-default" />
+            </div>
+        </div>
+        @*<input type="submit" value="Siguiente" class="btn btn-default" />*@
+    </div>
+    }
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

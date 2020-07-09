@@ -4,6 +4,8 @@ namespace Examen_2_Barrantes_Kevin.Models
 {
     public class IngredientsModel
     {
+        public int generalPrice { get; set; }
+        public string generalOrder { get; set; }
         public bool pepperoni { get; set; }
         [Display(Name = "Cantidad")]
         public string pepperoniQuantity { get; set; }
