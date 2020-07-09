@@ -14,5 +14,7 @@ namespace Examen_2_Barrantes_Kevin.Models
         public string dough { get; set; }
         public List<SelectListItem> SizeList { get; set; }
         public List<SelectListItem> DoughList { get; set; }
+        [Display(Name = "Precio:")]
+        public int price { get; set; }
     }
 }
